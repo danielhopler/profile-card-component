@@ -3,8 +3,9 @@
 - Resets - link to 'normalize.css in 'index.html'
 
     1. Global Styles and Defaults
-    2. Layout
-    3. Section-styles
+    2. Shell
+    3. Layout
+    4. Section-styles
 ===***/
 
 
@@ -19,26 +20,50 @@
 
     body {
         background: hsl(185, 75%, 39%);
+        
+        background-image: 
+           url(../images/bg-pattern-top.svg),
+           url(../images/bg-pattern-bottom.svg);
+        background-position: 
+        top left,
+        bottom right;
+        background-repeat: no-repeat;
+        background-size:;
         font-size: 18px;
         font-family: 'Kumbh Sans', sans-serif;
     }
-
    
 
 
 
-/*** 2. Layout ***/
+/*** 2. Shell ***/
 
     .card-container {
         display: flex;
+        flex-wrap: wrap;
         max-width: 500px;
-        margin: 15% auto;
+        margin: 10% auto;
         background-color: white;
         box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
+        border-radius: 16px;
         overflow: hidden;
     }
 
 
-/*** 3. Section-styles ***/
+/*** 3. Layout ***/
+
+.card-container > * {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.card-top {
+    background-image: url(../images/bg-pattern-card.svg);
+    width: 100%;
+    height: 200px;
+   
+}
+
+
+/*** 4. Section-styles ***/
 
