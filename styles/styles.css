@@ -10,8 +10,34 @@
 
 /*** 1. Global styles and defaults ***/
 
+    html {
+        box-sizing: border-box;
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    body {
+        background: hsl(185, 75%, 39%);
+        font-size: 18px;
+        font-family: 'Kumbh Sans', sans-serif;
+    }
+
+   
+
+
 
 /*** 2. Layout ***/
+
+    .card-container {
+        display: flex;
+        max-width: 500px;
+        margin: 15% auto;
+        background-color: white;
+        box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
+    }
 
 
 /*** 3. Section-styles ***/
