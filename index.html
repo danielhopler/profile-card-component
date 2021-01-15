@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" type="text/css" href="styles/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -19,28 +19,31 @@
 <body>
   <div class="card-container">
     <header class="card-top">
+      <div class="profile-pic">
+        <img src="images/image-victor.jpg" alt="Victor Crest">
+      </div>
     </header>
-    <div class="profile-pic">
-      <img src="images/image-victor.jpg" alt="Victor Crest">
-    </div>
-    <article >
-      <h3>Victor Crest <span class="age">26</span> </h3>
-      <h4>London</h4>
-    </article>
-    <footer>
-      <div class="followers">
-        <h3>80K</h3>
-        <p>Followers</p>
-      </div>
-      <div class="likes">
-        <h3>803K</h3>
-        <p>Likes</p>
-      </div>
-      <div class="photos">
-        <h3>1.4K</h3>
-        <p>Photos</p>
-      </div>
-    </footer>
+    
+    <main class="card-bottom">
+      <article class="profile-info">
+        <h3>Victor Crest <span class="age">26</span> </h3>
+        <h4>London</h4>
+      </article>
+      <footer>
+        <div class="followers">
+          <h3>80K</h3>
+          <p>Followers</p>
+        </div>
+        <div class="likes">
+          <h3>803K</h3>
+          <p>Likes</p>
+        </div>
+        <div class="photos">
+          <h3>1.4K</h3>
+          <p>Photos</p>
+        </div>
+      </footer>
+    </main> 
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

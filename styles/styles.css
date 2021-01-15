@@ -24,11 +24,9 @@
         background-image: 
            url(../images/bg-pattern-top.svg),
            url(../images/bg-pattern-bottom.svg);
-        background-position: 
-        top left,
-        bottom right;
-        background-repeat: no-repeat;
-        background-size:;
+        background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+        background-repeat: no-repeat, no-repeat;
+        overflow: hidden;
         font-size: 18px;
         font-family: 'Kumbh Sans', sans-serif;
     }
@@ -41,7 +39,7 @@
     .card-container {
         display: flex;
         flex-wrap: wrap;
-        max-width: 500px;
+        max-width: 450px;
         margin: 10% auto;
         background-color: white;
         box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.2);
@@ -52,18 +50,74 @@
 
 /*** 3. Layout ***/
 
-.card-container > * {
-    padding: 40px;
-    margin: 0 auto;
-}
+
 
 .card-top {
     background-image: url(../images/bg-pattern-card.svg);
     width: 100%;
-    height: 200px;
+    height: 175px;
    
 }
+
+.profile-pic {
+    height: 100px;
+    width: 100px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+    transform: translate(175px, 125px);
+}
+
+.profile-pic img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 6px solid #FFF;
+}
+
+.card-bottom {
+    margin-top: 10%;
+    width: 100%;
+}
+
+.profile-info {
+    text-align: center;   
+    border-bottom:  solid 1px hsl(0, 0%, 59%, 0.3);
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
 
 
 /*** 4. Section-styles ***/
 
+.age {
+    color: hsl(0, 0%, 59%);
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.profile-info h4 {
+    color: hsl(0, 0%, 59%);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+footer p {
+    color: hsl(0, 0%, 59%);
+    font-size: 14px;
+}
+
+@media(max-width: 450px) {
+    .profile-pic { 
+        transform: translate(140%, 125px);
+    }
+}
